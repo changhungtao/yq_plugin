@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yq.mapper.UserMapper">
+
+    <select id="selectUser" parameterType="map" resultType="com.yq.model.User">
+        select user_id, username, password, full_name, school_id,
+            class_id, avatar_url, registered_at, role_id, status,
+            push_alias, registration_id
+        from user
+        where 1 = 1
+        <if test="user_id != null">
+            <![CDATA[and user_id = #{user_id}]]>
+        </if>
+        <if test="username != null">
+            <![CDATA[and username = #{username}]]>
+        </if>
+        limit 1
+    </select>
+
+    <update id="updateUser" parameterMap="map">
+        update user set
+        <if test="password != null">
+            password = #{password},
+        </if>
+        <if test="full_name != null">
+            full_name = #{full_name},
+        </if>
+        <if test="school_id != null">
+            school_id = #{school_id},
+        </if>
+        <if test="class_id != null">
+            class_id = #{class_id},
+        </if>
+        <if test="avatar_url != null">
+            avatar_url = #{avatar_url},
+        </if>
+        <if test="role_id != null">
+            role_id = #{role_id},
+        </if>
+        <if test="status != null">
+            status = #{status},
+        </if>
+        <if test="push_alias != null">
+            push_alias = #{push_alias},
+        </if>
+        <if test="registration_id != null">
+            registration_id = #{registration_id},
+        </if>
+        user_id = #{user_id}
+        where user_id = #{user_id}
+    </update>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="user_id" parameterMap="com.yq.model.User">
+        insert into user (user_id, username, password, full_name, school_id,
+            class_id, avatar_url, registered_at, role_id, status,
+            push_alias, registration_id)
+        values(#{user_id}, #{username}, #{password}, #{full_name}, #{school_id},
+            #{class_id}, #{avatar_url}, #{registered_at}, #{role_id}, #{status},
+            #{push_alias}, #{registration_id})
+    </insert>
+</mapper>

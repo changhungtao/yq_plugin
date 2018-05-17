@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yq.mapper.SchoolMapper">
+
+    <select id="selectSchool" parameterType="map" resultType="com.yq.model.School">
+        select school_id, name, information, status
+        from school
+        where 1 = 1
+        <if test="school_id != null">
+            <![CDATA[and school_id = #{school_id}]]>
+        </if>
+        limit 1
+    </select>
+
+    <update id="updateSchool" parameterMap="map">
+        update school set
+        <if test="name != null">
+            name = #{name},
+        </if>
+        <if test="information != null">
+            information = #{information},
+        </if>
+        <if test="status != null">
+            status = #{status},
+        </if>
+        school_id = #{school_id}
+        where school_id = #{school_id}
+    </update>
+
+    <insert id="insertSchool" useGeneratedKeys="true" keyProperty="school_id" parameterMap="com.yq.model.School">
+        insert into school (school_id, name, information, status)
+        values(#{school_id}, #{name}, #{information}, #{status})
+    </insert>
+
+    <select id="selectClass" parameterType="map" resultType="com.yq.model.ClassInf">
+        select class_id, name, school_id, status
+        from class
+        where 1 = 1
+        <if test="class_id != null">
+            <![CDATA[and class_id = #{class_id}]]>
+        </if>
+        limit 1
+    </select>
+
+    <update id="updateClass" parameterMap="map">
+        update class set
+        <if test="name != null">
+            name = #{name},
+        </if>
+        <if test="school_id != null">
+            school_id = #{school_id},
+        </if>
+        <if test="status != null">
+            status = #{status},
+        </if>
+        class_id = #{class_id}
+        where class_id = #{class_id}
+    </update>
+
+    <insert id="insertClass" useGeneratedKeys="true" keyProperty="class_id" parameterMap="com.yq.model.ClassInf">
+        insert into class (class_id, name, school_id, status)
+        values(#{class_id}, #{name}, #{school_id}, #{status})
+    </insert>
+
+    <delete id="deleteClass" parameterMap="map">
+        delete from class where class_id = #{class_id}
+    </delete>
+</mapper>
