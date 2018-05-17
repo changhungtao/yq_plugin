@@ -2,151 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f54ff6-9157-4a66-b29e-0adc7c1ccfe8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/BaseInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/BaseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/app/BaseInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/FileInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/FileInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/app/FileInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/LoginInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/LoginInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/app/LoginInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/filter/TokenFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/app/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/app/filter/TokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/beans/JsonResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/beans/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/beans/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/beans/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/beans/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/beans/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/camera/CameraUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/camera/CameraUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/camera/CameraUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/BeanProperty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/BeanProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/constants/BeanProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/ErrorCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/constants/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/WatchProperty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/constants/WatchProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/constants/WatchProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/lang/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/lang/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/lang/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/ColumnMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/ColumnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/ColumnMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/ResultMapManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/ResultMapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/ResultMapManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingCriteria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/PagingCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingCriteriaFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingCriteriaFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/PagingCriteriaFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/PagingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/PagingInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/SortDirection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/SortDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/SortDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/Dialect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/Dialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/dialect/Dialect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/OracleDialect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/OracleDialect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/dialect/OracleDialect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/PaginationQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/mybatis/pagination/dialect/PaginationQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/mybatis/pagination/dialect/PaginationQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/push/AndroidPushMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/push/AndroidPushMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/push/AndroidPushMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/EncryptUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/EncryptUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/ucpaas/EncryptUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/SSLHttpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/SSLHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/ucpaas/SSLHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/SysConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/SysConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/ucpaas/SysConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/TemplateSMS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/TemplateSMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/ucpaas/TemplateSMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/UcpaasCommon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/ucpaas/UcpaasCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/ucpaas/UcpaasCommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/CollectionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/CollectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/CollectionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/CommonUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/EntryUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/EntryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/EntryUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/ExportExcelUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/ExportExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/ExportExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/JsonUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/OnlineCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/OnlineCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/OnlineCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/ResponseUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/ResponseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/TokenHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/commons/util/TokenHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/commons/util/TokenHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/ColumnMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/ColumnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/config/ColumnMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/ResultMapManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/ResultMapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/config/ResultMapManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/SpringContextHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/config/SpringContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/config/SpringContextHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/controller/filter/SimpleCORSFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/controller/filter/SimpleCORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/controller/filter/SimpleCORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/controller/shiro/ShiroController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/controller/shiro/ShiroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/controller/shiro/ShiroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/FileMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/FileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/mapper/FileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/SchoolMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/SchoolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/mapper/SchoolMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ClassInf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ClassInf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/ClassInf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ConstantDescription.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ConstantDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/ConstantDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ErrorMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/FileInf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/FileInf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/FileInf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/MultiLoginAuthenticationToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/MultiLoginAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/MultiLoginAuthenticationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ResponseContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/ResponseContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/ResponseContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/School.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/SuccessMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/SuccessMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/SuccessMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/listener/AuthenticationListenerLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/listener/AuthenticationListenerLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/other/listener/AuthenticationListenerLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/listener/SessionListenerLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/listener/SessionListenerLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/other/listener/SessionListenerLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/task_job/TaskJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/other/task_job/TaskJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/other/task_job/TaskJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/CustomCredentialsMatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/CustomCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/CustomCredentialsMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/MultiLoginAuthenticator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/MultiLoginAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/MultiLoginAuthenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/UserRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/FileServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/SchoolServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/SchoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/impl/SchoolServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/FileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/inf/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/SchoolService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/inf/SchoolService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jxyq/service/inf/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yq/service/inf/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/security.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/shiro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SchoolMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SchoolMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/proxool.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proxool.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bbs_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bbs_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/SmsWebChineseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/SmsWebChineseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yq/test/SmsWebChineseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestCamera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yq/test/TestCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestHttpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yq/test/TestHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestJava.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jxyq/test/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yq/test/TestJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -157,10 +16,66 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="100" column="37" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".classpath" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.classpath">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>baby_plan</find>
+      <find>rg.apache.commons</find>
+      <find>cglib</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>yq_plugin</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.project" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -181,9 +96,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
+    <option name="x" value="292" />
+    <option name="y" value="113" />
+    <option name="width" value="1127" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,32 +114,6 @@
               <item name="yq_plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="yq_plugin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="yq_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yq_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yq_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yq_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yq_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yq_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yq_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yq_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yq" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -237,11 +126,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
@@ -276,6 +166,32 @@
       </option>
       <patterns />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="package" value="true" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -309,18 +225,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526535879419</updated>
-      <workItem from="1526535880987" duration="475000" />
+      <workItem from="1526535880987" duration="2790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475000" />
+    <option name="totallyTimeSpent" value="2790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32843137" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
@@ -331,15 +247,16 @@
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.32843137" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4869281" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
       <window_info anchor="right" id="Theme Preview" />
@@ -361,10 +278,32 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="20">
+          <caret line="100" column="37" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -374,10 +313,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>baby_plan:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -385,7 +326,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -420,6 +361,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>yq_plugin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -443,6 +385,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

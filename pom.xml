@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>baby_plan</groupId>
-    <artifactId>baby_plan</artifactId>
+    <groupId>yq_plugin</groupId>
+    <artifactId>yq_plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>baby_plan</name>
+    <name>yq_plugin</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -377,7 +377,7 @@
 
 
     <build>
-        <finalName>baby_plan</finalName>
+        <finalName>yq_plugin</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -395,10 +395,10 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://127.0.0.1:8080/manager/text</url>
-                    <server>baby_plan</server>
+                    <server>yq_plugin</server>
                     <username>admin</username>
                     <password>jxyq</password>
-                    <path>/baby_plan</path>
+                    <path>/yq_plugin</path>
                     <update>true</update>
                 </configuration>
             </plugin>
