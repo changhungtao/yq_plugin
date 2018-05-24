@@ -73,7 +73,7 @@
     <!-- 主定时计划-->
     <bean id="quartzManagerTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
         <property name="jobDetail" ref="quartzManagerJobDetail"/>
-        <property name="startDelay" value="300000" />
+        <property name="startDelay" value="15000" />
         <property name="repeatInterval" value="60000" />
     </bean>
     <!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序-->

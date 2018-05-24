@@ -20,6 +20,7 @@
                 <value>classpath:proxool.properties</value>
                 <value>classpath:security.properties</value>
                 <value>classpath:systemParam.properties</value>
+                <value>classpath:log4j.properties</value>
             </array>
         </property>
     </bean>

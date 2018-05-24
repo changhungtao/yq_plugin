@@ -26,6 +26,7 @@ public class QuartzManager implements BeanFactoryAware {
 
     @SuppressWarnings("unused")
     private void reScheduleJob() throws Exception, ParseException {
+        log.info("start reScheduleJob......");
         List<SignUpJob> jobs = signUpJobService.selectJobs();
         if (jobs != null && jobs.size() > 0) {
             for (SignUpJob job : jobs) {
@@ -42,7 +43,7 @@ public class QuartzManager implements BeanFactoryAware {
             if(trigger != null){
                 modify(job, trigger);
             }else{
-                if(job.getState().equals("1")){
+                if(job.getState() == 1){
                     create(job);
                 }
             }
@@ -57,7 +58,7 @@ public class QuartzManager implements BeanFactoryAware {
     public void create(SignUpJob job) throws Exception{
         MethodInvokingJobDetailFactoryBean mjdfb = new MethodInvokingJobDetailFactoryBean();
         mjdfb.setName(job.getJobDetailName());
-        mjdfb.setTargetObject(Class.forName("SignUp").newInstance());
+        mjdfb.setTargetObject(Class.forName("com.yq.other.task_job.SignUp").newInstance());
         mjdfb.setTargetMethod("execute");
         mjdfb.setConcurrent(false);
         mjdfb.afterPropertiesSet();
@@ -78,7 +79,7 @@ public class QuartzManager implements BeanFactoryAware {
     }
 
     public void modify(SignUpJob job, CronTriggerBean trigger) throws Exception{
-        if(!job.getState().equals("1")){
+        if(!(job.getState() == 1)){
             remove(job, trigger);
             return;
         }
