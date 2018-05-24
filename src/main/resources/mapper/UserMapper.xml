@@ -17,7 +17,7 @@
         limit 1
     </select>
 
-    <update id="updateUser" parameterMap="map">
+    <update id="updateUser" parameterType="map">
         update user set
         <if test="password != null">
             password = #{password},
@@ -50,7 +50,7 @@
         where user_id = #{user_id}
     </update>
 
-    <insert id="insertUser" useGeneratedKeys="true" keyProperty="user_id" parameterMap="com.yq.model.User">
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="user_id" parameterType="com.yq.model.User">
         insert into user (user_id, username, password, full_name, school_id,
             class_id, avatar_url, registered_at, role_id, status,
             push_alias, registration_id)

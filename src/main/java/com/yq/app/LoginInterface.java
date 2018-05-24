@@ -7,11 +7,9 @@ import com.yq.commons.constants.BeanProperty.UserStatus;
 import com.yq.commons.constants.ErrorCode;
 import com.yq.commons.ucpaas.SysConfig;
 import com.yq.commons.util.TokenHandler;
-import com.yq.model.ClassInf;
-import com.yq.model.ResponseContent;
-import com.yq.model.School;
-import com.yq.model.User;
+import com.yq.model.*;
 import com.yq.service.inf.SchoolService;
+import com.yq.service.inf.SignUpJobService;
 import com.yq.service.inf.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -39,9 +38,33 @@ public class LoginInterface extends BaseInterface {
     private SchoolService schoolService;
 
     @Autowired
+    private SignUpJobService signUpJobService;
+
+    @Autowired
     private MessageDigestPasswordEncoder passwordEncoder;
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+
+    @RequestMapping(value = "/api/open/signup", method = RequestMethod.GET)
+    public void getSignUpJobList(HttpServletResponse req, HttpServletResponse res){
+        ResponseContent content = new ResponseContent();
+        try {
+            List<SignUpJob> jobs = signUpJobService.selectJobs();
+            SignUpJob job = jobs.get(0);
+            JsonObject json = new JsonObject();
+            json.add("job_id", gson.toJsonTree(job.getJob_id()));
+            json.add("trigger_name", gson.toJsonTree(job.getTriggerName()));
+            json.add("cron_expression", gson.toJsonTree(job.getCronExpression()));
+            json.add("job_detail_name", gson.toJsonTree(job.getJobDetailName()));
+            json.add("yq_name", gson.toJsonTree(job.getYq_name()));
+            json.add("state", gson.toJsonTree(job.getState()));
+            content.setSuccess_message(json);
+            setResponseContent(res, content);
+        }catch (Exception e) {
+            setSystemErrorRes(res, e.toString(), ErrorCode.SYSTEM_ERROR);
+        }
+    }
+
 
     /*3.3.1 POST /api/open/login*/
     @RequestMapping(value = "/api/open/login", method = RequestMethod.POST)

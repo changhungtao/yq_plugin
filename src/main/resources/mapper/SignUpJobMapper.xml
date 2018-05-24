@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yq.mapper.SignUpJobMapper">
+
+    <resultMap id="signJobMap" type="com.yq.model.SignUpJob">
+        <result column="job_id" property="job_id"/>
+        <result column="user_id" property="user_id"/>
+        <result column="yq_userid" property="yq_userid"/>
+        <result column="yq_groupid" property="yq_groupid"/>
+        <result column="loc_longitude" property="loc_longitude"/>
+        <result column="loc_latitude" property="loc_latitude"/>
+        <result column="time_week" property="time_week"/>
+        <result column="time_hour" property="time_hour"/>
+        <result column="time_minute" property="time_minute"/>
+        <result column="loc_random_xs" property="loc_random_xs"/>
+        <result column="time_random_xs" property="time_random_xs"/>
+        <result column="state" property="state"/>
+    </resultMap>
+    
+    <select id="selectJobs" parameterType="map" resultMap="signJobMap">
+        select job_id, user_id, yq_userid, yq_name, yq_groupid,
+                loc_longitude, loc_latitude, time_week, time_hour, time_minute,
+                loc_random_xs, time_random_xs, state
+        from signup_job
+        where 1 = 1
+        <if test="job_id != null">
+            <![CDATA[and job_id = #{job_id}]]>
+        </if>
+        <if test="user_id != null">
+            <![CDATA[and user_id = #{user_id}]]>
+        </if>
+        <if test="yq_userid != null">
+            <![CDATA[and yq_userid = #{yq_userid}]]>
+        </if>
+        <if test="yq_groupid != null">
+            <![CDATA[and yq_groupid = #{yq_groupid}]]>
+        </if>
+    </select>
+
+    <select id="selectJob" parameterType="map" resultType="com.yq.model.SignUpJob">
+        select job_id, user_id, yq_userid, yq_name, yq_groupid,
+                loc_longitude, loc_latitude, time_week, time_hour, time_minute,
+                loc_random_xs, time_random_xs, state
+        from signup_job
+        where 1 = 1
+        <if test="job_id != null">
+            <![CDATA[and job_id = #{job_id}]]>
+        </if>
+        limit 1
+    </select>
+
+    <insert id="insertJob" useGeneratedKeys="true" keyProperty="job_id" parameterType="com.yq.model.SignUpJob">
+        insert into signup_job(job_id, user_id, yq_userid, yq_name, yq_groupid,
+                loc_longitude, loc_latitude, time_week, time_hour, time_minute,
+                loc_random_xs, time_random_xs, state)
+        values(#{job_id}, #{user_id}, #{yq_userid}, #{yq_name}, #{yq_groupid},
+                #{loc_longitude}, #{loc_latitude}, #{time_week}, #{time_hour}, #{time_minute},
+                #{loc_random_xs}, #{time_random_xs}, #{state})
+    </insert>
+
+    <update id="updateJob" parameterType="com.yq.model.SignUpJob">
+        update signup_job set
+        <if test="user_id != null">
+            user_id = #{user_id},
+        </if>
+        <if test="yq_userid != null">
+            yq_userid = #{yq_userid},
+        </if>
+        <if test="yq_name != null">
+            yq_name = #{yq_name},
+        </if>
+        <if test="yq_groupid != null">
+            yq_groupid = #{yq_groupid},
+        </if>
+        <if test="loc_longitude != null">
+            loc_longitude = #{loc_longitude},
+        </if>
+        <if test="loc_latitude != null">
+            loc_latitude = #{loc_latitude},
+        </if>
+        <if test="time_week != null">
+            time_week = #{time_week},
+        </if>
+        <if test="time_hour != null">
+            time_hour = #{time_hour},
+        </if>
+        <if test="time_minute != null">
+            time_minute = #{time_minute},
+        </if>
+        <if test="loc_random_xs != null">
+            loc_random_xs = #{loc_random_xs},
+        </if>
+        <if test="time_random_xs != null">
+            time_random_xs = #{time_random_xs},
+        </if>
+        <if test="state != null">
+            state = #{state},
+        </if>
+        job_id = #{job_id}
+        where job_id = #{job_id}
+    </update>
+
+    <delete id="deleteJob" parameterType="com.yq.model.SignUpJob">
+        update signup_job set set state = "0" where job_id = #{job_id}
+    </delete>
+
+</mapper>

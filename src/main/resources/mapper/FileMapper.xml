@@ -15,7 +15,7 @@
         limit 1
     </select>
 
-    <update id="updateFile" parameterMap="map">
+    <update id="updateFile" parameterType="map">
         update file set
         <if test="file_path != null">
             file_path = #{file_path},
@@ -27,7 +27,7 @@
         where file_id = #{file_id}
     </update>
 
-    <insert id="insertFile" useGeneratedKeys="true" keyProperty="file_id" parameterMap="com.yq.model.FileInf">
+    <insert id="insertFile" useGeneratedKeys="true" keyProperty="file_id" parameterType="com.yq.model.FileInf">
         insert into file (file_id, md5, file_path, upload_time)
         values(#{file_id}, #{md5}, #{file_path}, #{upload_time})
     </insert>

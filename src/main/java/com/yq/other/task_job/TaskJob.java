@@ -1,12 +1,15 @@
 package com.yq.other.task_job;
 
 import com.yq.config.SpringContextHolder;
-import com.yq.service.inf.UserService;
+import com.yq.model.SignUpJob;
+import com.yq.service.inf.SignUpJobService;
+
+import java.util.List;
 
 public class TaskJob {
-    UserService userService = (UserService) SpringContextHolder.getBean("UserService");
+    SignUpJobService signUpJobService = (SignUpJobService) SpringContextHolder.getBean("SignUpJobService");
 
-    public void SendMeasureRemind() {
+    public void execute() {
         /*long max_measured_at = System.currentTimeMillis() / 1000 - 3 * 24 * 3600;
         List<Integer> user_id_list = userService.selUserIdByMaxMeasuredTime(max_measured_at);
         List<PushService> push_service_list = userService.selPushServiceByUserId(user_id_list);
@@ -23,6 +26,10 @@ public class TaskJob {
                 iPush.sendMessage(push_service.getPush_token(), msg_content);
             }
         }*/
+        List<SignUpJob> job_list = signUpJobService.selectJobs();
+        for (SignUpJob job : job_list) {
+            System.out.println(job.getJob_id());
+        }
         System.out.println("Calling Task Job.");
     }
 }

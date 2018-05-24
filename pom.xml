@@ -341,6 +341,14 @@
             <artifactId>ini4j</artifactId>
             <version>0.5.4</version>
         </dependency>
+<!--
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+-->
 
         <!-- DISCUZ-->
         <!--
@@ -394,10 +402,10 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://127.0.0.1:8080/manager/text</url>
+                    <url>http://127.0.0.1:8080/manager/</url>
                     <server>yq_plugin</server>
                     <username>admin</username>
-                    <password>jxyq</password>
+                    <password>admin</password>
                     <path>/yq_plugin</path>
                     <update>true</update>
                 </configuration>

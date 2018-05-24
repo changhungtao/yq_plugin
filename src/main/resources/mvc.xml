@@ -60,21 +60,28 @@
     </mvc:interceptors>
     <!-- <bean id="exceptionResolver" class="com.yqeb.ExceptionHandler"/>-->
 
-    <!--定时任务相关配置-->
-    <bean name="taskJob" class="com.yq.other.task_job.TaskJob"/>
-    <bean id="methodInvokingJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <property name="targetObject" ref="taskJob"/>
-        <property name="targetMethod" value="SendMeasureRemind"/>
+    <!--利用 quartz实现定时器功能，定时任务相关配置-->
+    <bean id="quartzManagerBean" class="com.yq.other.task_job.QuartzManager">
+        <property name="scheduler" ref="schedulerManager" />
     </bean>
-    <!--定时任务触发器-->
-    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
-        <property name="jobDetail" ref="methodInvokingJobDetail"/>
-        <property name="cronExpression" value="0 0 8 * * ?"/>
+    <!--配置JobDetail-->
+    <bean id="quartzManagerJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="quartzManagerBean"/>
+        <property name="targetMethod" value="reScheduleJob"/>
+        <property name="concurrent" value="false" />
     </bean>
-    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <!-- 主定时计划-->
+    <bean id="quartzManagerTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+        <property name="jobDetail" ref="quartzManagerJobDetail"/>
+        <property name="startDelay" value="300000" />
+        <property name="repeatInterval" value="60000" />
+    </bean>
+    <!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序-->
+    <bean id="schedulerManager" lazy-init="false" autowire="no"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
             <list>
-                <ref bean="cronTrigger"/>
+                <ref bean="quartzManagerTrigger"/>
             </list>
         </property>
     </bean>
