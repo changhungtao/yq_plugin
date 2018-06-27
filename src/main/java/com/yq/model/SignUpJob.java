@@ -122,7 +122,7 @@ public class SignUpJob {
     public String getCronExpression(){
         //[秒] [分] [小时] [日] [月] [周] [年]
         //0 15 11 * * 2-6 *
-        String cronExpression = String.format("0 %s %s ? * %s *", time_minute, time_hour, "2-6");
+        String cronExpression = String.format("0 %s %s ? * %s *", time_minute, time_hour, time_week);
         return cronExpression;
     }
 

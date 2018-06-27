@@ -30,42 +30,49 @@ public class QuartzManager implements BeanFactoryAware {
         List<SignUpJob> jobs = signUpJobService.selectJobs();
         if (jobs != null && jobs.size() > 0) {
             for (SignUpJob job : jobs) {
+                log.debug(job);
                 configQuatrz(job);
             }
         }
     }
 
     public boolean configQuatrz(SignUpJob job) {
+        log.debug("Config job[" + job.getJob_id() + "]...");
         boolean result = false;
         try {
             CronTriggerBean trigger = (CronTriggerBean) scheduler.getTrigger(
                     job.getTriggerName(), Scheduler.DEFAULT_GROUP);
-            if(trigger != null){
+            if (trigger != null) {
                 modify(job, trigger);
-            }else{
-                if(job.getState() == 1){
+            } else {
+                if (job.getState() == 1) {
                     create(job);
                 }
             }
             result = true;
         } catch (Exception e) {
             result = false;
+            log.error(e.getStackTrace());
             e.printStackTrace();
         }
         return result;
     }
 
-    public void create(SignUpJob job) throws Exception{
+    public void create(SignUpJob job) throws Exception {
         MethodInvokingJobDetailFactoryBean mjdfb = new MethodInvokingJobDetailFactoryBean();
         mjdfb.setName(job.getJobDetailName());
         mjdfb.setTargetObject(Class.forName("com.yq.other.task_job.SignUp").newInstance());
         mjdfb.setTargetMethod("execute");
+        Object[] arguments = new Object[1];
+        arguments[0] = job;
+        mjdfb.setArguments(arguments);
         mjdfb.setConcurrent(false);
         mjdfb.afterPropertiesSet();
 
         JobDetail jobDetail = new JobDetail();
         jobDetail = (JobDetail) mjdfb.getObject();
         jobDetail.setName(job.getJobDetailName());
+        jobDetail.getJobDataMap().put("job_id", job.getJob_id());
         scheduler.addJob(jobDetail, true);
 
         CronTriggerBean c = new CronTriggerBean();
@@ -75,34 +82,34 @@ public class QuartzManager implements BeanFactoryAware {
         c.setJobName(job.getJobDetailName());
         scheduler.scheduleJob(c);
         scheduler.rescheduleJob(job.getTriggerName(), Scheduler.DEFAULT_GROUP, c);
-        log.info(new Date() + ":新建" + job.getTriggerName() + "计划任务");
+        log.info("新建" + job.getTriggerName() + "计划任务");
     }
 
-    public void modify(SignUpJob job, CronTriggerBean trigger) throws Exception{
-        if(!(job.getState() == 1)){
+    public void modify(SignUpJob job, CronTriggerBean trigger) throws Exception {
+        if (!(job.getState() == 1)) {
             remove(job, trigger);
             return;
         }
-        if (trigger.getCronExpression().equalsIgnoreCase(job.getCronExpression())){
+        if (trigger.getCronExpression().equalsIgnoreCase(job.getCronExpression())) {
             return;
         }
         trigger.setCronExpression(job.getCronExpression());
         scheduler.rescheduleJob(job.getTriggerName(), Scheduler.DEFAULT_GROUP, trigger);
-        log.info(new Date() + ": 更新" + job.getTriggerName() + "计划任务");
+        log.info("更新" + job.getTriggerName() + "计划任务");
     }
 
-    public void remove(SignUpJob job, CronTriggerBean trigger) throws Exception{
+    public void remove(SignUpJob job, CronTriggerBean trigger) throws Exception {
         scheduler.pauseTrigger(trigger.getName(), trigger.getGroup());
         scheduler.unscheduleJob(trigger.getName(), trigger.getGroup());
         scheduler.deleteJob(trigger.getJobName(), trigger.getJobGroup());
-        log.info(new Date() + ":删除" + job.getTriggerName() + "计划任务");
+        log.info("删除" + job.getTriggerName() + "计划任务");
     }
 
-    public Scheduler getScheduler(){
+    public Scheduler getScheduler() {
         return scheduler;
     }
 
-    public void setScheduler(Scheduler scheduler){
+    public void setScheduler(Scheduler scheduler) {
         this.scheduler = scheduler;
     }
 
@@ -110,7 +117,7 @@ public class QuartzManager implements BeanFactoryAware {
         this.beanFactory = factory;
     }
 
-    public BeanFactory getBeanFactory(){
+    public BeanFactory getBeanFactory() {
         return beanFactory;
     }
 }

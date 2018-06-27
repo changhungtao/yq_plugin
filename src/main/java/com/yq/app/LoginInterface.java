@@ -1,5 +1,6 @@
 package com.yq.app;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
@@ -50,15 +51,20 @@ public class LoginInterface extends BaseInterface {
         ResponseContent content = new ResponseContent();
         try {
             List<SignUpJob> jobs = signUpJobService.selectJobs();
-            SignUpJob job = jobs.get(0);
-            JsonObject json = new JsonObject();
-            json.add("job_id", gson.toJsonTree(job.getJob_id()));
-            json.add("trigger_name", gson.toJsonTree(job.getTriggerName()));
-            json.add("cron_expression", gson.toJsonTree(job.getCronExpression()));
-            json.add("job_detail_name", gson.toJsonTree(job.getJobDetailName()));
-            json.add("yq_name", gson.toJsonTree(job.getYq_name()));
-            json.add("state", gson.toJsonTree(job.getState()));
-            content.setSuccess_message(json);
+
+            JsonArray lists = new JsonArray();
+            for (SignUpJob job : jobs) {
+                JsonObject item = new JsonObject();
+                item.add("job_id", gson.toJsonTree(job.getJob_id()));
+                item.add("trigger_name", gson.toJsonTree(job.getTriggerName()));
+                item.add("cron_expression", gson.toJsonTree(job.getCronExpression()));
+                item.add("job_detail_name", gson.toJsonTree(job.getJobDetailName()));
+                item.add("yq_name", gson.toJsonTree(job.getYq_name()));
+                item.add("state", gson.toJsonTree(job.getState()));
+                lists.add(item);
+            }
+
+            content.setSuccess_message(lists);
             setResponseContent(res, content);
         }catch (Exception e) {
             setSystemErrorRes(res, e.toString(), ErrorCode.SYSTEM_ERROR);
